@@ -73,14 +73,22 @@
     .product-description {
       font-size: 1rem;
       color: #444;
-      flex-grow: 1;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
+      flex-grow: 0;
     }
     .product-price {
       font-size: 1.3rem;
       font-weight: 700;
       color: #1f7a8c;
       margin-bottom: 20px;
+    }
+    iframe {
+      width: 100%;
+      height: 215px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      border: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
     }
     .btn-buy {
       background-color: #072442;
@@ -92,6 +100,8 @@
       border-radius: 8px;
       cursor: pointer;
       transition: background-color 0.25s ease;
+      align-self: center;
+      margin-top: auto;
     }
     .btn-buy:hover {
       background-color: #031a30;
@@ -105,6 +115,9 @@
       .product-card {
         max-width: 100%;
       }
+      iframe {
+        height: 200px;
+      }
     }
   </style>
 </head>
@@ -116,29 +129,35 @@
     </header>
 
     <section class="products">
+
+      <!-- Product 1 -->
       <article class="product-card">
         <h2 class="product-title">Monetize YouTube with Whiteboard Sketch Videos</h2>
+        <iframe src="https://www.youtube.com/embed/UKQ9JF0yqPQ" allowfullscreen></iframe>
         <p class="product-description">
           Discover step-by-step strategies to create engaging whiteboard sketch videos that attract viewers and generate steady income on YouTube. Perfect for beginners and content creators looking to scale.
         </p>
         <div class="product-price">$49.45</div>
-        <!-- Stripe buy button with success redirect -->
         <button class="btn-buy" onclick="window.location.href='https://buy.stripe.com/dRmbJ0fxc5ju5yR7897kc01?success_url=https://YOUR_GITHUB_USERNAME.github.io/access-whiteboard.html'">
           Buy Now
         </button>
       </article>
+
+      <!-- Product 2 -->
       <article class="product-card">
         <h2 class="product-title">How to Create Viral AI Shorts to Monetize</h2>
+        <iframe src="https://www.youtube.com/embed/Xa1Fbe_KjXA" allowfullscreen></iframe>
         <p class="product-description">
           Learn how to harness AI tools to craft viral short videos that grab attention and boost your revenue streams on social media platforms. Stay ahead of trends with cutting-edge techniques.
         </p>
         <div class="product-price">$38.45</div>
-        <!-- Stripe buy button with success redirect -->
         <button class="btn-buy" onclick="window.location.href='https://buy.stripe.com/14A9ASbgW9zK7GZgIJ7kc02?success_url=https://YOUR_GITHUB_USERNAME.github.io/access-ai-shorts.html'">
           Buy Now
         </button>
       </article>
+
     </section>
   </div>
 </body>
 </html>
+
