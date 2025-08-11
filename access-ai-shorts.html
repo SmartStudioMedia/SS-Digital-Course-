@@ -28,59 +28,16 @@
       border-radius: 12px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.3);
     }
-    /* Lock form */
-    #lockScreen {
-      margin-top: 50px;
-    }
-    input {
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      margin-right: 10px;
-    }
-    button {
-      padding: 10px 20px;
-      background: #072442;
-      color: #fff;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    button:hover {
-      background: #031a30;
-    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>How to Create Viral AI Shorts to Monetize</h1>
-    <p>Enter your course access password below:</p>
 
-    <div id="lockScreen">
-      <input type="password" id="passwordInput" placeholder="Enter password" />
-      <button onclick="checkPassword()">Unlock</button>
-      <p id="error" style="color:red; display:none;">Incorrect password. Try again.</p>
-    </div>
-
-    <div id="courseContent" style="display:none;">
+    <div id="courseContent">
       <p>Welcome! This is your exclusive course access page.</p>
       <iframe src="https://www.youtube.com/embed/Xa1Fbe_KjXA" allowfullscreen></iframe>
     </div>
   </div>
-
-  <script>
-    function checkPassword() {
-      const password = document.getElementById("passwordInput").value;
-      const correctPassword = "aishorts123"; // CHANGE THIS PASSWORD if you want
-
-      if (password === correctPassword) {
-        document.getElementById("lockScreen").style.display = "none";
-        document.getElementById("courseContent").style.display = "block";
-      } else {
-        document.getElementById("error").style.display = "block";
-      }
-    }
-  </script>
 </body>
 </html>
